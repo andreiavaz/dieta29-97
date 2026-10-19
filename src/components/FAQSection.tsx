@@ -38,20 +38,20 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-[#FAF9F5] py-16 md:py-24 border-b border-olive-150">
+    <section className="bg-[#FAF8F5] py-12 sm:py-16 md:py-24 border-b border-[#EAE4D7]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center mb-10 md:mb-14">
-          <span className="text-[11px] font-bold tracking-[0.18em] text-[#10702d] uppercase bg-olive-100/90 px-3.5 py-1.5 rounded-full inline-block font-sans border border-olive-200/80">
+        <div className="text-center mb-8 sm:mb-12">
+          <span className="text-[11px] font-semibold tracking-[0.14em] text-[#203D2B]/70 uppercase font-sans mb-2 block">
             AINDA TEM DÚVIDAS?
           </span>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-sans text-zinc-900 mt-4 tracking-tight leading-tight">
+          <h2 className="font-serif text-[24px] xs:text-[26px] sm:text-[32px] md:text-[36px] font-bold text-[#203D2B] tracking-tight leading-snug">
             Perguntas frequentes
           </h2>
 
-          <p className="text-sm sm:text-base text-olive-800 mt-2.5 font-sans font-medium leading-relaxed">
+          <p className="text-[15px] sm:text-[16px] text-[#203D2B]/80 mt-2.5 font-sans font-normal leading-relaxed">
             Tudo o que você precisa saber antes de começar.
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function FAQSection() {
             return (
               <div
                 key={faq.id}
-                className="bg-white rounded-2xl border border-zinc-200/90 shadow-2xs overflow-hidden transition-all duration-200"
+                className="bg-white rounded-xl sm:rounded-2xl border border-[#EAE4D7] shadow-2xs overflow-hidden transition-all duration-200"
               >
                 <button
                   type="button"
@@ -72,13 +72,13 @@ export default function FAQSection() {
                   aria-expanded={isOpen}
                   className="w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 focus:outline-none cursor-pointer group"
                 >
-                  <span className="font-sans text-sm sm:text-base font-bold text-zinc-900 group-hover:text-[#10702d] transition-colors leading-snug">
+                  <span className="font-sans text-[14px] sm:text-[15.5px] font-semibold text-[#203D2B] group-hover:text-[#116B38] transition-colors leading-snug">
                     {faq.question}
                   </span>
 
                   <span
-                    className={`w-7 h-7 rounded-full bg-zinc-50 border border-zinc-200 flex items-center justify-center text-zinc-600 flex-shrink-0 transition-transform duration-300 ${
-                      isOpen ? "rotate-180 bg-olive-100/70 border-olive-300 text-[#10702d]" : ""
+                    className={`w-7 h-7 rounded-full bg-[#F8F6F0] border border-[#EAE4D7] flex items-center justify-center text-[#203D2B]/70 flex-shrink-0 transition-transform duration-200 ${
+                      isOpen ? "rotate-180 bg-[#116B38]/10 text-[#116B38]" : ""
                     }`}
                   >
                     <ChevronDown className="w-4 h-4 stroke-[2.5]" />
@@ -91,10 +91,10 @@ export default function FAQSection() {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.25, ease: "easeInOut" }}
+                      transition={{ duration: 0.2, ease: "easeInOut" }}
                     >
-                      <div className="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 border-t border-zinc-100">
-                        <p className="text-xs sm:text-sm text-zinc-600 font-sans leading-relaxed pt-3">
+                      <div className="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 border-t border-[#EAE4D7]/60">
+                        <p className="text-[13.5px] sm:text-[14.5px] text-[#203D2B]/80 font-sans leading-relaxed pt-3 font-normal">
                           {faq.answer}
                         </p>
                       </div>
@@ -107,13 +107,13 @@ export default function FAQSection() {
         </div>
 
         {/* Support Help Block */}
-        <div className="mt-10 text-center p-5 sm:p-6 bg-white border border-zinc-200/90 rounded-2xl shadow-2xs">
-          <p className="text-xs sm:text-sm text-zinc-600 font-sans leading-relaxed flex items-center justify-center gap-1.5 flex-wrap">
-            <Mail className="w-4 h-4 text-[#10702d] flex-shrink-0" />
-            <span>Ainda restou alguma dúvida? Fale com o nosso suporte através do e-mail:</span>
+        <div className="mt-8 sm:mt-10 text-center p-4 sm:p-5 bg-white border border-[#EAE4D7] rounded-xl sm:rounded-2xl">
+          <p className="text-[12.5px] sm:text-[13.5px] text-[#203D2B]/75 font-sans leading-relaxed flex items-center justify-center gap-1.5 flex-wrap">
+            <Mail className="w-4 h-4 text-[#116B38] flex-shrink-0" />
+            <span>Ainda restou alguma dúvida? Fale com nosso suporte através do e-mail:</span>
             <a
               href="mailto:andreianutricaoclinica@gmail.com"
-              className="font-bold text-[#10702d] hover:underline"
+              className="font-semibold text-[#116B38] hover:underline"
             >
               andreianutricaoclinica@gmail.com
             </a>

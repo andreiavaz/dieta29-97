@@ -14,11 +14,11 @@ interface PricingSectionProps {
 
 const INCLUDED_ITEMS = [
   "Guia digital Método D.I.E.T.A. da Caneta",
-  "14 dias de sugestões de cardápios",
+  "14 dias de sugestões de cardápios práticos",
   "Guia de receitas para almoço",
   "Guia de receitas para lanche",
   "Guia de receitas para jantar",
-  "Aula Caneta da caneta"
+  "Aula: Planejamento Alimentar para Quem Usa Caneta"
 ];
 
 export default function PricingSection({ isInstagram = false }: PricingSectionProps) {
@@ -33,123 +33,119 @@ export default function PricingSection({ isInstagram = false }: PricingSectionPr
   };
 
   return (
-    <section id="planos" className="bg-cream-100 py-16 md:py-24 border-b border-olive-150">
+    <section id="planos" className="bg-[#F8F6F0] py-12 sm:py-16 md:py-24 border-b border-[#EAE4D7]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
-          <span className="text-[11px] font-bold tracking-[0.18em] text-[#10702d] uppercase bg-olive-100/90 px-3.5 py-1.5 rounded-full inline-block font-sans border border-olive-200/80">
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
+          <span className="text-[11px] font-semibold tracking-[0.14em] text-[#203D2B]/70 uppercase font-sans mb-2 block">
             SEU PRÓXIMO PASSO COMEÇA AQUI
           </span>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-sans text-zinc-900 mt-4 tracking-tight leading-tight">
+          <h2 className="font-serif text-[24px] xs:text-[26px] sm:text-[32px] md:text-[38px] font-bold text-[#203D2B] tracking-tight leading-snug">
             Comece a cuidar da sua alimentação com mais clareza e confiança
           </h2>
 
-          <p className="text-sm sm:text-base text-olive-800 mt-3 font-sans font-medium leading-relaxed">
+          <p className="text-[15px] sm:text-[16px] text-[#203D2B]/80 mt-2.5 sm:mt-3 font-sans font-normal leading-relaxed">
             Tenha acesso ao Método D.I.E.T.A. da Caneta e a todos os materiais complementares para facilitar sua rotina.
           </p>
         </div>
 
         {/* Unified Single Offer Card */}
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-lg mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4 }}
-            className="bg-white rounded-3xl p-6 sm:p-9 md:p-10 shadow-xl border-2 border-brand-green/20 relative"
+            transition={{ duration: 0.35 }}
+            className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-xs border border-[#EAE4D7] relative"
           >
-            {/* Top Badge */}
-            <div className="flex justify-center -mt-10 sm:-mt-13 mb-5">
-              <span className="bg-[#10702d] text-white text-xs font-black uppercase px-6 py-2 rounded-full shadow-md tracking-wider">
+            {/* Top Seal */}
+            <div className="text-center mb-5">
+              <span className="inline-block text-[11px] font-bold uppercase tracking-[0.16em] text-[#116B38] bg-[#116B38]/10 px-4 py-1 rounded-full font-sans">
                 ACESSO COMPLETO
               </span>
             </div>
 
-            {/* Product Title & Subtitle */}
-            <div className="text-center border-b border-zinc-150 pb-6 mb-6">
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-zinc-950 font-sans tracking-tight">
+            {/* Product Title & Price Header */}
+            <div className="text-center border-b border-[#EAE4D7] pb-6 mb-6">
+              <h3 className="font-serif text-[22px] sm:text-[26px] font-bold text-[#203D2B] tracking-tight">
                 Método D.I.E.T.A. da Caneta
               </h3>
 
               <div className="mt-4">
-                <span className="text-xs uppercase font-bold text-zinc-500 tracking-wider block">
+                <span className="text-[12px] uppercase font-medium text-[#203D2B]/60 tracking-wider block font-sans">
                   Pagamento único de
                 </span>
                 
-                <div className="flex items-center justify-center gap-1 mt-1">
-                  <span className="text-2xl font-bold text-[#0c311c]">R$</span>
-                  <span className="text-5xl sm:text-6xl font-black font-sans text-[#0c311c] tracking-tight">
+                <div className="flex items-baseline justify-center gap-1.5 mt-1">
+                  <span className="text-xl sm:text-2xl font-bold text-[#203D2B] font-serif">R$</span>
+                  <span className="text-5xl sm:text-6xl font-bold font-serif text-[#203D2B] tracking-tight">
                     29,97
                   </span>
                 </div>
 
-                <span className="text-xs text-zinc-500 font-medium block mt-1">
-                  Sem mensalidade.
+                <span className="text-xs text-[#203D2B]/60 font-sans font-medium block mt-1.5">
+                  Sem mensalidade · Acesso imediato
                 </span>
               </div>
             </div>
 
             {/* Included Items Checklist */}
-            <div className="space-y-3.5 mb-8">
-              <p className="text-xs font-bold uppercase tracking-wider text-zinc-500 font-sans">
-                O que você recebe:
+            <div className="space-y-3 mb-8">
+              <p className="text-[11px] font-bold uppercase tracking-wider text-[#203D2B]/70 font-sans mb-2">
+                Conteúdo incluso:
               </p>
 
               {INCLUDED_ITEMS.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3">
-                  <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-[#eaf4ec] text-[#10702d] flex items-center justify-center text-xs font-bold">
-                    <Check className="w-3.5 h-3.5 stroke-[2.8]" />
+                  <span className="mt-0.5 flex-shrink-0 w-4.5 h-4.5 rounded-full bg-[#116B38]/10 text-[#116B38] flex items-center justify-center">
+                    <Check className="w-3 h-3 stroke-[2.8]" />
                   </span>
-                  <span className="text-xs sm:text-sm text-zinc-800 font-medium font-sans leading-relaxed">
+                  <span className="text-[13.5px] sm:text-[14.5px] text-[#203D2B] font-medium font-sans leading-relaxed">
                     {item}
                   </span>
                 </div>
               ))}
             </div>
 
-            {/* CTA Button */}
+            {/* CTA Button (1 of the 2 primary content buttons) */}
             <div>
               <a
                 href={CHECKOUT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={trackCheckout}
-                className="w-full text-center inline-flex items-center justify-center gap-2 bg-[#10702d] hover:bg-[#0c5622] text-white font-extrabold py-4 px-6 rounded-2xl shadow-lg hover:shadow-emerald-900/15 transition-all uppercase tracking-wider font-sans cursor-pointer text-sm sm:text-base min-h-[52px]"
+                className="w-full text-center inline-flex items-center justify-center gap-2 bg-[#116B38] hover:bg-[#0e572d] text-white font-bold py-4 px-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5 uppercase tracking-wider font-sans cursor-pointer text-[14px] sm:text-[15px] min-h-[50px] group"
               >
                 <span>QUERO MEU ACESSO POR R$ 29,97</span>
-                <ArrowRight className="w-4.5 h-4.5 stroke-[2.5]" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform stroke-[2.5]" />
               </a>
 
-              <div className="flex items-center justify-center gap-2 text-[11px] text-zinc-500 font-sans mt-3.5">
-                <Lock className="w-3.5 h-3.5 text-[#10702d]" />
-                <span>Pagamento 100% seguro via Eduzz · Acesso imediato</span>
+              <div className="flex items-center justify-center gap-2 text-[11.5px] text-[#203D2B]/70 font-sans mt-3.5">
+                <Lock className="w-3.5 h-3.5 text-[#116B38]" />
+                <span>Pagamento 100% seguro via Eduzz</span>
               </div>
             </div>
 
           </motion.div>
         </div>
 
-        {/* 7 Days Guarantee Section */}
-        <div className="mt-14 max-w-3xl mx-auto bg-white border border-[#CBD9CC] rounded-3xl p-6 sm:p-8 md:p-10 shadow-xs">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center">
+        {/* 7 Days Unconditional Guarantee Box - Minimalist vector icon, no emojis */}
+        <div className="mt-10 sm:mt-12 max-w-2xl mx-auto bg-white border border-[#EAE4D7] rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-2xs">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 text-center sm:text-left">
             
-            <div className="md:col-span-4 flex flex-col items-center justify-center text-center">
-              <div className="w-20 h-20 rounded-full border-4 border-dashed border-[#576f3c] flex items-center justify-center text-3xl mb-2.5 bg-cream-50 shadow-inner">
-                🏆
-              </div>
-              <span className="text-[10px] text-[#576f3c] font-black uppercase tracking-wider">Risco Zero</span>
-              <span className="text-xs text-olive-700 font-bold mt-0.5">7 Dias De Proteção</span>
+            <div className="w-14 h-14 rounded-2xl bg-[#B79C68]/15 border border-[#B79C68]/30 flex items-center justify-center flex-shrink-0 text-[#B79C68]">
+              <ShieldCheck className="w-8 h-8 stroke-[1.8]" />
             </div>
 
-            <div className="md:col-span-8 space-y-3 text-center md:text-left">
-              <h3 className="font-sans text-xl sm:text-2xl text-zinc-950 font-bold">
+            <div className="space-y-2">
+              <h3 className="font-serif text-[18px] sm:text-[20px] text-[#203D2B] font-bold">
                 Garantia Incondicional de 7 Dias
               </h3>
               
-              <p className="text-xs sm:text-sm text-zinc-700 leading-relaxed font-sans">
-                Adquira, leia o método e comece a aplicar. Se em até 7 dias você sentir que o material não era para você, basta solicitar e você receberá 100% do seu dinheiro de volta, sem burocracia ou questionamentos. O risco é todo nosso.
+              <p className="text-[13px] sm:text-[14px] text-[#203D2B]/75 leading-relaxed font-sans font-normal">
+                Você pode acessar o método, conferir todos os cardápios e receitas com calma. Se em até 7 dias você entender que o conteúdo não era o que esperava, basta solicitar e faremos a devolução integral do valor pago. Sem questionamentos.
               </p>
             </div>
 
