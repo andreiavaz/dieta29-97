@@ -1,0 +1,8 @@
+{
+  "name": "dieta-da-caneta-R$29,97",
+  "description": "Página de vendas oficial de \u0027A Dieta da Caneta\u0027 por Andréia Vaz, Nutricionista Clínica. O método completo sobre o que comer para emagrecer de verdade e não recuperar o peso ao encerrar o tratamento com caneta emagrecedora.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
