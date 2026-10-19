@@ -7,9 +7,6 @@ import React from "react";
 import { BookOpen, Check, ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "motion/react";
 
-// @ts-ignore
-import recipeBundleImg from "../assets/images/recipe_bundle_1781100383033.png";
-
 const RECIPE_GUIDES = [
   {
     title: "Receitas de Almoço",
@@ -33,71 +30,68 @@ const RECIPE_GUIDES = [
 
 export default function BonusSection() {
   return (
-    <section className="bg-cream-50 py-16 md:py-24 border-b border-olive-150 overflow-hidden">
+    <section className="bg-[#F8F6F0] py-10 sm:py-14 md:py-20 border-b border-[#EAE4D7] overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <span className="text-[11px] font-bold tracking-[0.18em] text-[#10702d] uppercase bg-olive-100/90 px-3.5 py-1.5 rounded-full inline-block font-sans border border-olive-200/80">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-14">
+          <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.14em] text-[#116B38] uppercase bg-[#EFECE3] px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full inline-block font-sans border border-[#EAE4D7]">
             SEU ACESSO INCLUI MUITO MAIS
           </span>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-sans text-zinc-900 mt-4 tracking-tight leading-tight">
+          <h2 className="text-[23px] xs:text-[25px] sm:text-3xl md:text-4xl font-bold font-sans text-[#203D2B] mt-2.5 sm:mt-3 tracking-tight leading-snug">
             Além do Método D.I.E.T.A., você recebe materiais extras para colocar tudo em prática.
           </h2>
 
-          <p className="text-sm sm:text-base text-olive-800 mt-3 max-w-2xl mx-auto font-sans font-medium leading-relaxed">
+          <p className="text-[14.5px] sm:text-base text-[#203D2B]/80 mt-2 sm:mt-2.5 max-w-2xl mx-auto font-sans font-medium leading-relaxed">
             Você não precisa ficar apenas na teoria. Tenha receitas práticas e uma aula com a Nutri Andréia para ajudar a organizar sua alimentação durante o tratamento.
           </p>
         </div>
 
         {/* 1. DESTAQUE PRINCIPAL: Masterclass Card */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4 }}
-          className="bg-white rounded-3xl p-6 sm:p-8 md:p-10 border border-zinc-200/90 shadow-sm relative overflow-hidden mb-8"
+          transition={{ duration: 0.35 }}
+          className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-7 md:p-9 border border-[#EAE4D7] shadow-xs relative overflow-hidden mb-6 sm:mb-8"
         >
-          {/* Subtle background ambient glow */}
-          <div className="absolute top-0 right-0 w-80 h-80 bg-olive-100/40 rounded-full filter blur-3xl -z-10 pointer-events-none" />
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
             
             {/* Real Masterclass Mockup Image */}
             <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-[380px] rounded-2xl overflow-hidden shadow-md border border-zinc-200/80 bg-zinc-50 p-2">
+              <div className="relative w-full max-w-[280px] sm:max-w-[340px] rounded-xl sm:rounded-2xl overflow-hidden shadow-xs border border-[#EAE4D7] bg-[#F8F6F0] p-1.5 sm:p-2">
                 <img
                   src="https://andreiavaz846109688.wordpress.com/wp-content/uploads/2026/10/ed0d5ad6-b33e-40d8-ba37-1cc94e949cda.png"
                   alt="Masterclass Faça a Caneta Trabalhar a Seu Favor"
                   referrerPolicy="no-referrer"
-                  className="w-full h-auto object-contain rounded-xl select-none"
+                  className="w-full h-auto object-contain rounded-lg select-none"
                 />
               </div>
             </div>
 
             {/* Masterclass Copy Details */}
-            <div className="lg:col-span-7 space-y-3.5 text-left">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-olive-100 text-[#10702d] text-[11px] font-bold uppercase tracking-wider border border-olive-200">
-                <Sparkles className="w-3.5 h-3.5" />
+            <div className="lg:col-span-7 space-y-2.5 sm:space-y-3 text-left">
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#EFECE3] text-[#116B38] text-[10px] sm:text-[11px] font-bold uppercase tracking-wider border border-[#EAE4D7]">
+                <Sparkles className="w-3 h-3 text-[#B79C68]" />
                 <span>INCLUSA NA OFERTA</span>
               </div>
 
-              <h3 className="text-xl sm:text-2xl font-bold font-sans text-zinc-900 leading-snug">
+              <h3 className="text-[18px] sm:text-2xl font-bold font-sans text-[#203D2B] leading-snug">
                 Masterclass Faça a Caneta Trabalhar a Seu Favor
               </h3>
 
-              <p className="text-sm sm:text-[15px] text-zinc-600 font-sans leading-relaxed">
+              <p className="text-[13px] sm:text-[14.5px] text-[#203D2B]/75 font-sans leading-relaxed">
                 Uma aula em vídeo com orientações práticas para ajudar você a transformar os conhecimentos do método em escolhas alimentares no dia a dia.
               </p>
 
-              <div className="pt-2 flex flex-wrap gap-4 text-xs text-zinc-700 font-medium">
+              <div className="pt-1 flex flex-wrap gap-3 sm:gap-4 text-[12px] sm:text-xs text-[#203D2B]/85 font-medium">
                 <span className="flex items-center gap-1.5">
-                  <Check className="w-4 h-4 text-[#10702d] stroke-[2.5]" />
+                  <Check className="w-3.5 h-3.5 text-[#116B38] stroke-[2.8]" />
                   <span>Acesso digital imediato</span>
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <Check className="w-4 h-4 text-[#10702d] stroke-[2.5]" />
+                  <Check className="w-3.5 h-3.5 text-[#116B38] stroke-[2.8]" />
                   <span>Assista no celular ou computador</span>
                 </span>
               </div>
@@ -107,29 +101,29 @@ export default function BonusSection() {
         </motion.div>
 
         {/* 2. GUIAS DE RECEITAS: 3 Cards Menores */}
-        <div className="mb-10">
-          <div className="flex items-center justify-between mb-4">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-500 font-sans">
+        <div className="mb-7 sm:mb-9">
+          <div className="flex items-center justify-between mb-3">
+            <h4 className="text-[11px] font-bold uppercase tracking-wider text-[#203D2B]/60 font-sans">
               3 Guias Práticos de Receitas Inclusos
             </h4>
-            <span className="text-xs font-semibold text-[#10702d] flex items-center gap-1 font-sans">
+            <span className="text-[11px] font-semibold text-[#116B38] flex items-center gap-1 font-sans">
               <BookOpen className="w-3.5 h-3.5" />
-              <span>Formatos digitais para consultar quando quiser</span>
+              <span>Formatos digitais em PDF</span>
             </span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4">
             {RECIPE_GUIDES.map((guide, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, y: 12 }}
+                initial={{ opacity: 0, y: 8 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: idx * 0.08 }}
-                className="bg-white rounded-2xl p-4 sm:p-5 border border-zinc-200/90 shadow-2xs hover:border-olive-300 transition-all flex items-center gap-4"
+                transition={{ duration: 0.25, delay: idx * 0.05 }}
+                className="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-[#EAE4D7] shadow-2xs hover:border-[#DDD5C3] transition-all flex items-center gap-3 sm:gap-3.5"
               >
                 {/* Compact eBook Mockup beside text */}
-                <div className="w-20 h-24 sm:w-22 sm:h-28 flex-shrink-0 rounded-xl overflow-hidden bg-zinc-50 border border-zinc-150 flex items-center justify-center p-1.5 shadow-2xs">
+                <div className="w-16 h-20 sm:w-20 sm:h-24 flex-shrink-0 rounded-lg overflow-hidden bg-[#F8F6F0] border border-[#EAE4D7] flex items-center justify-center p-1 shadow-2xs">
                   <img
                     src={guide.imageUrl}
                     alt={guide.alt}
@@ -140,24 +134,24 @@ export default function BonusSection() {
 
                 {/* Text beside mockup */}
                 <div className="flex-grow min-w-0">
-                  <span className="text-[10px] uppercase font-bold text-[#10702d] tracking-wider block mb-0.5 font-sans">
+                  <span className="text-[9.5px] uppercase font-bold text-[#116B38] tracking-wider block mb-0.5 font-sans">
                     Bônus Digital
                   </span>
 
-                  <h4 className="text-sm sm:text-base font-bold text-zinc-900 font-sans leading-snug">
+                  <h4 className="text-[13.5px] sm:text-[15px] font-bold text-[#203D2B] font-sans leading-snug">
                     {guide.title}
                   </h4>
 
-                  <p className="text-xs text-zinc-600 font-sans mt-1 leading-relaxed">
+                  <p className="text-[11.5px] sm:text-[12.5px] text-[#203D2B]/70 font-sans mt-0.5 leading-snug">
                     {guide.description}
                   </p>
 
-                  <div className="mt-2 pt-2 border-t border-zinc-100 flex items-center justify-between text-[11px] text-[#10702d] font-bold font-sans">
+                  <div className="mt-1.5 pt-1.5 border-t border-[#EAE4D7] flex items-center justify-between text-[10.5px] text-[#116B38] font-bold font-sans">
                     <span className="flex items-center gap-1">
-                      <Check className="w-3.5 h-3.5 stroke-[2.5]" />
+                      <Check className="w-3 h-3 stroke-[2.8]" />
                       <span>Incluso</span>
                     </span>
-                    <span className="text-zinc-500 font-normal text-[10px]">eBook PDF</span>
+                    <span className="text-[#203D2B]/50 font-normal text-[9.5px]">eBook PDF</span>
                   </div>
                 </div>
               </motion.div>
@@ -167,30 +161,30 @@ export default function BonusSection() {
 
         {/* 3. BOX FINAL */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4 }}
-          className="bg-white rounded-3xl p-6 sm:p-8 border-2 border-brand-green/20 shadow-md text-center max-w-2xl mx-auto"
+          transition={{ duration: 0.3 }}
+          className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-[#EAE4D7] shadow-xs text-center max-w-xl mx-auto"
         >
-          <p className="text-xs sm:text-sm font-bold text-zinc-600 uppercase tracking-wide font-sans">
+          <p className="text-[11px] sm:text-xs font-bold text-[#203D2B]/70 uppercase tracking-wide font-sans">
             Método + Masterclass + 3 Guias de Receitas
           </p>
 
-          <div className="mt-3 mb-4">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0c311c] font-sans tracking-tight">
+          <div className="mt-2 mb-2.5">
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-[#203D2B] font-sans tracking-tight">
               Tudo incluso por R$ 29,97
             </h3>
           </div>
 
-          <p className="text-xs text-zinc-600 font-sans font-medium">
+          <p className="text-[11.5px] sm:text-xs text-[#203D2B]/60 font-sans font-medium">
             Pagamento único · Acesso digital
           </p>
 
-          <div className="mt-5 flex justify-center">
+          <div className="mt-4 flex justify-center">
             <a
               href="#planos"
-              className="inline-flex items-center justify-center gap-2 bg-[#10702d] hover:bg-[#0c5722] text-white font-extrabold text-xs sm:text-sm px-7 py-3.5 rounded-xl shadow-md transition-all uppercase tracking-wider font-sans cursor-pointer group"
+              className="inline-flex items-center justify-center gap-2 bg-[#116B38] hover:bg-[#0e572d] text-white font-bold text-[13.5px] sm:text-[14px] px-6 py-3.5 rounded-xl shadow-xs transition-all uppercase tracking-wider font-sans cursor-pointer group min-h-[48px]"
             >
               <span>QUERO GARANTIR O PACOTE COMPLETO</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform stroke-[2.5]" />

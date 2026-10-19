@@ -80,56 +80,56 @@ export default function Header({ isInstagram = false }: HeaderProps) {
           <div className="lg:col-span-7 flex flex-col text-left">
             
             {/* Tag / Category Badge - Clean, elegant & premium typography */}
-            <div className="inline-flex items-center self-start px-3.5 py-1.5 rounded-full bg-brand-green/5 text-brand-green border border-brand-green/15 text-[10.5px] font-bold tracking-[0.14em] uppercase shadow-2xs mb-3">
+            <div className="inline-flex items-center self-start px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#203D2B]/5 text-[#203D2B] border border-[#203D2B]/15 text-[10px] sm:text-[11px] font-bold tracking-[0.12em] uppercase shadow-2xs mb-2.5 sm:mb-3">
               <span>GUIA PRÁTICO PARA MULHERES QUE USAM CANETA EMAGRECEDORA</span>
             </div>
 
             {/* Headline and ad matching title */}
-            <div className="mb-2">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-brand-green uppercase tracking-tight leading-snug font-sans">
+            <div className="mb-2 sm:mb-2.5">
+              <h1 className="text-[26px] xs:text-[28px] sm:text-3xl md:text-4xl lg:text-[46px] font-extrabold text-[#203D2B] uppercase tracking-tight leading-[1.18] sm:leading-snug font-sans">
                 A CANETA DIMINUIU SUA FOME.
-                <span className="block text-brand-red mt-1">
+                <span className="block text-[#981B36] mt-1">
                   MAS VOCÊ SABE O QUE COMER AGORA?
                 </span>
               </h1>
             </div>
 
             {/* Subheadline description */}
-            <div className="mb-3">
-              <p className="text-sm md:text-base text-olive-750 font-sans leading-relaxed max-w-2xl font-medium">
+            <div className="mb-3 sm:mb-3.5">
+              <p className="text-[14.5px] sm:text-[15.5px] md:text-base text-[#203D2B]/85 font-sans leading-relaxed max-w-2xl font-medium">
                 Descubra como se alimentar mesmo com pouco apetite, nutrir seu corpo e cuidar da sua massa muscular durante o emagrecimento sem dietas complicadas.
               </p>
             </div>
 
             {/* 3 Key Benefit Bullet Items */}
-            <div className="space-y-2.5 mb-5 font-sans">
-              <div className="flex items-center gap-2.5 text-sm md:text-base text-olive-850 font-medium">
-                <Check className="w-5 h-5 text-brand-green flex-shrink-0 stroke-[2.5]" />
+            <div className="space-y-2 sm:space-y-2.5 mb-4 sm:mb-5 font-sans">
+              <div className="flex items-center gap-2 sm:gap-2.5 text-[13.5px] sm:text-[15px] text-[#203D2B] font-medium">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-[#116B38] flex-shrink-0 stroke-[2.8]" />
                 <span>Sem precisar pesar comida ou contar calorias</span>
               </div>
-              <div className="flex items-center gap-2.5 text-sm md:text-base text-olive-850 font-medium">
-                <Check className="w-5 h-5 text-brand-green flex-shrink-0 stroke-[2.5]" />
+              <div className="flex items-center gap-2 sm:gap-2.5 text-[13.5px] sm:text-[15px] text-[#203D2B] font-medium">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-[#116B38] flex-shrink-0 stroke-[2.8]" />
                 <span>14 dias de cardápios prontos para facilitar sua rotina</span>
               </div>
-              <div className="flex items-center gap-2.5 text-sm md:text-base text-olive-850 font-medium">
-                <Check className="w-5 h-5 text-brand-green flex-shrink-0 stroke-[2.5]" />
+              <div className="flex items-center gap-2 sm:gap-2.5 text-[13.5px] sm:text-[15px] text-[#203D2B] font-medium">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-[#116B38] flex-shrink-0 stroke-[2.8]" />
                 <span>Estratégias para lidar com a volta do apetite</span>
               </div>
             </div>
 
             {/* Main CTA Button & Under-button assurance */}
-            <div className="pt-2 flex flex-col items-start gap-2.5">
+            <div className="pt-1 sm:pt-2 flex flex-col items-start gap-2">
               <a 
                 href="#planos"
-                className="inline-flex items-center justify-center bg-[#10702d] hover:bg-[#0c5722] text-white font-black px-8 py-4.5 rounded-[20px] shadow-xl hover:shadow-emerald-900/10 transition-all duration-200 transform hover:-translate-y-0.5 text-center group text-base select-none cursor-pointer w-full sm:w-auto"
+                className="inline-flex items-center justify-center bg-[#116B38] hover:bg-[#0e572d] text-white font-bold px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl sm:rounded-2xl shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 text-center group text-[14px] sm:text-[15px] select-none cursor-pointer w-full sm:w-auto min-h-[48px]"
               >
                 <span className="flex items-center gap-2 uppercase font-sans tracking-wide">
                   <span>QUERO APRENDER O QUE COMER</span>
-                  <ArrowRight className="w-4.5 h-4.5 group-hover:translate-x-1 transition-transform stroke-[2.5]" />
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform stroke-[2.5]" />
                 </span>
               </a>
-              <div className="flex items-center gap-2 text-xs text-olive-700 font-semibold pl-1">
-                <ShieldCheck className="w-4 h-4 text-brand-green flex-shrink-0" />
+              <div className="flex items-center gap-1.5 text-[12px] sm:text-xs text-[#203D2B]/80 font-medium pl-1">
+                <ShieldCheck className="w-4 h-4 text-[#116B38] flex-shrink-0" />
                 <span>Apenas R$ 29,97 · Garantia de 7 dias</span>
               </div>
             </div>

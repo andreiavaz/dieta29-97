@@ -18,70 +18,70 @@ const IDENTIFICATION_ITEMS = [
 
 export default function ObjectionBreaker() {
   return (
-    <section className="bg-[#FAF9F5] py-12 md:py-16 border-b border-olive-150">
+    <section className="bg-[#F8F6F0] py-9 sm:py-12 md:py-16 border-b border-[#EAE4D7]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         
-        {/* Main Card Container */}
-        <div className="bg-white rounded-3xl border border-zinc-200/90 shadow-sm p-6 sm:p-8 md:p-10">
+        {/* Main Card Container - Compact & balanced on mobile */}
+        <div className="bg-white rounded-2xl sm:rounded-3xl border border-[#EAE4D7] shadow-xs p-4 sm:p-7 md:p-9">
           
           {/* Eyebrow */}
-          <div className="text-center mb-2">
-            <span className="text-[11px] font-bold tracking-[0.18em] text-zinc-500 uppercase font-sans">
+          <div className="text-center mb-1.5 sm:mb-2">
+            <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.14em] text-[#203D2B]/60 uppercase font-sans">
               VOCÊ SE IDENTIFICA?
             </span>
           </div>
 
           {/* Heading */}
           <div className="text-center max-w-2xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-[30px] font-bold text-zinc-900 tracking-tight leading-snug font-sans">
+            <h2 className="text-[22px] xs:text-[24px] sm:text-2xl md:text-[28px] font-bold text-[#203D2B] tracking-tight leading-snug font-sans">
               Você começou a usar a caneta, mas ainda tem dúvidas sobre como cuidar da sua alimentação?
             </h2>
-            <p className="text-sm md:text-[15px] text-zinc-500 mt-2.5 font-sans">
+            <p className="text-[13.5px] sm:text-[15px] text-[#203D2B]/75 mt-1.5 sm:mt-2 font-sans">
               Veja se alguma dessas situações faz parte da sua rotina:
             </p>
           </div>
 
-          {/* 6 Situations List - 1 Column, compact and elegant */}
-          <div className="space-y-2.5 mt-7">
+          {/* 6 Situations List - 1 Column, compact and perfectly readable */}
+          <div className="space-y-2 sm:space-y-2.5 mt-5 sm:mt-6">
             {IDENTIFICATION_ITEMS.map((item, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 8 }}
+                initial={{ opacity: 0, y: 6 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.25, delay: index * 0.04 }}
-                className="flex items-center gap-3.5 px-4 py-3.5 sm:px-5 sm:py-3.5 rounded-xl border border-zinc-200/80 bg-white hover:border-zinc-300 transition-colors"
+                transition={{ duration: 0.2, delay: index * 0.03 }}
+                className="flex items-center gap-3 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl border border-[#EAE4D7] bg-white hover:border-[#DDD5C3] transition-colors"
               >
-                <div className="w-5 h-5 rounded-full border border-emerald-600 flex items-center justify-center text-emerald-600 flex-shrink-0">
-                  <Check className="w-3 h-3 stroke-[2.8]" />
+                <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full border border-[#116B38] flex items-center justify-center text-[#116B38] flex-shrink-0">
+                  <Check className="w-2.5 h-2.5 sm:w-3 sm:h-3 stroke-[2.8]" />
                 </div>
-                <p className="text-xs sm:text-sm md:text-[14.5px] text-zinc-800 font-sans leading-relaxed">
+                <p className="text-[13px] sm:text-[14.5px] text-[#203D2B] font-sans leading-snug sm:leading-relaxed">
                   {item}
                 </p>
               </motion.div>
             ))}
           </div>
 
-          {/* Transition Box - Deep Forest Green with high-contrast soft gold button */}
+          {/* Transition Box - Deep Green #203D2B with soft gold button #B79C68 */}
           <motion.div
-            initial={{ opacity: 0, y: 12 }}
+            initial={{ opacity: 0, y: 8 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.35, delay: 0.15 }}
-            className="mt-8 bg-[#0d2817] text-white rounded-2xl p-6 sm:p-8 text-center"
+            transition={{ duration: 0.3, delay: 0.1 }}
+            className="mt-6 sm:mt-8 bg-[#203D2B] text-white rounded-xl sm:rounded-2xl p-5 sm:p-7 text-center"
           >
-            <h3 className="text-lg sm:text-xl font-bold font-sans tracking-tight text-white">
+            <h3 className="text-[16px] sm:text-xl font-bold font-sans tracking-tight text-white leading-snug">
               Você não precisa descobrir tudo sozinha.
             </h3>
             
-            <p className="text-xs sm:text-sm text-zinc-200 font-sans mt-2.5 max-w-xl mx-auto leading-relaxed">
+            <p className="text-[12.5px] sm:text-sm text-zinc-200 font-sans mt-2 max-w-xl mx-auto leading-relaxed">
               A caneta ajuda a diminuir a fome. O Método D.I.E.T.A. te ensina a fazer escolhas alimentares mais conscientes durante o tratamento.
             </p>
 
-            <div className="mt-6 flex justify-center">
+            <div className="mt-4 sm:mt-5 flex justify-center">
               <a
                 href="#metodo"
-                className="inline-flex items-center justify-center gap-2 bg-[#d8c292] hover:bg-[#cfb680] text-[#0a2414] font-extrabold text-xs sm:text-sm px-6 py-3.5 rounded-xl transition-all shadow-md uppercase tracking-wider font-sans cursor-pointer group min-h-[46px]"
+                className="inline-flex items-center justify-center gap-2 bg-[#B79C68] hover:bg-[#a68a57] text-[#203D2B] font-bold text-[13.5px] sm:text-[14px] px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl transition-all shadow-xs uppercase tracking-wider font-sans cursor-pointer group min-h-[46px]"
               >
                 <span>QUERO CONHECER O MÉTODO</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform stroke-[2.5]" />
