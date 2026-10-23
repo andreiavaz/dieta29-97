@@ -50,7 +50,7 @@ export default function LandingPage() {
     if (typeof window !== "undefined" && (window as any).fbq) {
       (window as any).fbq("track", "InitiateCheckout", {
         content_name: "Método D.I.E.T.A. da Caneta",
-        value: 29.97,
+        value: 27.00,
         currency: "BRL"
       });
     }
@@ -74,7 +74,7 @@ export default function LandingPage() {
       {/* 5. MATERIAIS COMPLEMENTARES (Bônus & Aula) */}
       <BonusSection />
 
-      {/* 6. OFERTA OFICIAL (R$ 29,97 & Garantia) */}
+      {/* 6. OFERTA OFICIAL (R$ 27 & Garantia) */}
       <PricingSection isInstagram={isInstagram} />
 
       {/* 7. FAQ (Perguntas Frequentes) */}
@@ -154,7 +154,7 @@ export default function LandingPage() {
             </span>
             <div>
               <p className="text-xs font-bold text-[#203D2B]">Método D.I.E.T.A. da Caneta</p>
-              <p className="text-[11px] text-[#203D2B]/70">Acesso completo por <strong className="text-[#116B38] font-bold">R$ 29,97</strong> · Pagamento único</p>
+              <p className="text-[11px] text-[#203D2B]/70">Acesso completo por <strong className="text-[#116B38] font-bold">R$ 27</strong> · Pagamento único</p>
             </div>
           </div>
 
@@ -168,14 +168,14 @@ export default function LandingPage() {
               <ArrowUp className="w-4 h-4" />
             </button>
             <a 
-              href="https://sun.eduzz.com/E0D65V1Y91"
+              href="https://sun.eduzz.com/G92EBBVZWE"
               target="_blank"
               rel="noopener noreferrer"
               onClick={trackCheckout}
               className="flex-grow sm:flex-grow-0 inline-flex items-center justify-center gap-2 bg-[#116B38] hover:bg-[#0e572d] text-white text-xs sm:text-[13px] font-bold px-5 py-2.5 sm:py-3 rounded-xl transition-all shadow-sm cursor-pointer uppercase tracking-wider"
             >
               <ShoppingBag className="w-3.5 h-3.5 stroke-[2.5]" />
-              <span>Garantir por R$ 29,97</span>
+              <span>Garantir por R$ 27</span>
             </a>
           </div>
 

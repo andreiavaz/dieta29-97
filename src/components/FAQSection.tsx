@@ -25,7 +25,7 @@ const FAQ_ITEMS = [
   },
   {
     id: "faq-4",
-    question: "O que exatamente vou receber ao comprar por R$ 29,97?",
+    question: "O que exatamente vou receber ao comprar por R$ 27?",
     answer: "Você recebe o Método D.I.E.T.A. da Caneta, 14 dias de sugestões de cardápios, três guias de receitas — almoço, lanche e jantar — e uma aula de planejamento alimentar. Tudo em formato digital, com pagamento único e garantia de 7 dias."
   }
 ];

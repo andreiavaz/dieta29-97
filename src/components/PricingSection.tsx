@@ -81,7 +81,7 @@ export default function PricingSection({ isInstagram = false }: PricingSectionPr
                 <div className="flex items-baseline justify-center gap-1.5 mt-1">
                   <span className="text-xl sm:text-2xl font-bold text-[#203D2B] font-serif">R$</span>
                   <span className="text-5xl sm:text-6xl font-bold font-serif text-[#203D2B] tracking-tight">
-                    29,97
+                    27
                   </span>
                 </div>
 
@@ -118,7 +118,7 @@ export default function PricingSection({ isInstagram = false }: PricingSectionPr
                 onClick={trackCheckout}
                 className="w-full text-center inline-flex items-center justify-center gap-2 bg-[#116B38] hover:bg-[#0e572d] text-white font-bold py-4 px-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5 uppercase tracking-wider font-sans cursor-pointer text-[14px] sm:text-[15px] min-h-[50px] group"
               >
-                <span>QUERO MEU ACESSO POR R$ 29,97</span>
+                <span>QUERO MEU ACESSO POR R$ 27</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform stroke-[2.5]" />
               </a>
 

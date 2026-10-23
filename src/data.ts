@@ -170,12 +170,12 @@ export const BONUSES: BonusItem[] = [
   }
 ];
 
-export const CHECKOUT_URL = "https://sun.eduzz.com/E0D65V1Y91";
-export const OFFER_PRICE = 29.97;
+export const CHECKOUT_URL = "https://sun.eduzz.com/G92EBBVZWE";
+export const OFFER_PRICE = 27;
 
 export const ACCESS_OFFER = {
-  price: 29.97,
-  link: "https://sun.eduzz.com/E0D65V1Y91",
+  price: 27,
+  link: "https://sun.eduzz.com/G92EBBVZWE",
   items: [
     "Guia digital Método D.I.E.T.A. da Caneta",
     "14 dias de sugestões de cardápios",

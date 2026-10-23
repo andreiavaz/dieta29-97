@@ -89,7 +89,7 @@ export default function Header({ isInstagram = false }: HeaderProps) {
 
               <div className="flex items-center gap-1.5 text-[12.5px] sm:text-[13px] text-[#203D2B]/75 font-medium pl-1 font-sans">
                 <ShieldCheck className="w-4 h-4 text-[#116B38] flex-shrink-0" />
-                <span>Apenas R$ 29,97 · Garantia de 7 dias</span>
+                <span>Apenas R$ 27 · Garantia de 7 dias</span>
               </div>
             </div>
 
